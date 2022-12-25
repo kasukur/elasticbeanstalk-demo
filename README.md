@@ -1,5 +1,4 @@
-# elasticbeanstalk-demo
-Elastic Beanstalk Demo: Auto Scaling with a shared load balancer
+# Elastic Beanstalk Demo: Auto Scaling with a shared load balancer
 
 ## Table of Contents
 1. [Introduction](#intro)
@@ -37,7 +36,7 @@ Let's get started with the demo.
 
 2. Navigate to EC2 > Security Groups > Create a new security group for your ALB, and set the following values:
    * Name: `EBSSG`
-   * Add two Inbound rules to allow `HTTP` traffic from `0.0.0.0/0` and `::/0` (IPV6)
+   * Add two Inbound rules to allow `HTTP` traffic from `0.0.0.0/0` (IPV4) and `::/0` (IPV6)
 
     _EBS Security Group_
     ![EBS-ALB-SG](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/6ow00nvk1llzwfa3u5ng.png)
@@ -110,16 +109,16 @@ Let's get started with the demo.
 4. Click `Configure more options`
     * Note: Step 6, 7 and 8 should be done in the same order.
 5. Select `High availability` under `Presets`.
-6. Click `Edit` next to `Network` and select same two `Availabilty Zones` for `Load Balancer`, `Instance settings` and `Database settings`.
+6. Click `Edit` next to `Network` and select same two `Availability Zones` for `Load Balancer`, `Instance settings` and `Database settings`.
 7. Click `Edit` next to `Load Balancer`
-    * Load balancer type: `Applicaton Load Balancer`
+    * Load balancer type: `Application Load Balancer`
     * Type: `Shared`
     * Load balancer ARN: Select the ARN of `SharedALB`
     * Select `default` under Processes and click `Actions` > `Edit` > enter Path as `/admin.html` and click `Save`
     * Click `Add Rule` under `Rules`, Enter `Name` as `admin`, `PathPattern` as `/*`, `Process` as `default` and click `Add`
 8. Click `Save`.
 9. Click `Create Environment`.
-10. Wait for the environment to be create and then click on the applicaton URL.
+10. Wait for the environment to be create and then click on the application URL.
 
 _EBS Admin 1_
 ![EBS_Admin1](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/6732crlvx8mlh13k5a31.png)
@@ -165,16 +164,16 @@ _you might notice this error if you do not select the shared load balancer_
 4. Click `Configure more options`
     * Note: Step 6, 7 and 8 should be done in the same order.
 5. Select `High availability` under `Presets`.
-6. Click `Edit` next to `Network` and select same two `Availabilty Zones` for `Load Balancer`, `Instance settings` and `Database settings`.
+6. Click `Edit` next to `Network` and select same two `Availability Zones` for `Load Balancer`, `Instance settings` and `Database settings`.
 7. Click `Edit` next to `Load Balancer`
-    * Load balancer type: `Applicaton Load Balancer`
+    * Load balancer type: `Application Load Balancer`
     * Type: `Shared`
     * Load balancer ARN: Select the ARN of `SharedALB`
     * Select `default` under Processes and click `Actions` > `Edit` > enter Path as `/forum.html` and click `Save`
     * Click `Add Rule` under `Rules`, Enter `Name` as `admin`, `PathPattern` as `/*`, `Process` as `default` and click `Add`
 8. Click `Save`.
 9. Click `Create Environment`.
-10. Wait for the environment to be create and then click on the applicaton URL.
+10. Wait for the environment to be create and then click on the application URL.
 
 
 _EBS Forum 4.3_
@@ -228,9 +227,10 @@ _EBS Forum Auto Scaling Activity_
 ### Clean Up
 
 1. Select each environment under `Elastic Beanstalk` > `Environments`, Select `Actions` > `Terminate Environment`.
-2. Delete `SharedALB` under `Load Balancers`
+2. Select each application under `Elastic Beanstalk` > `Applications`, Select `Actions` > `Delete Application`.
+3. Delete `SharedALB` under `Load Balancers`
 4. Delete Security Group `EBSSG`.
-4. After both environments are terminated, Empty and Delete S3 bucket prefixed with `elasticbeanstalk-us-east-1-...`
+5. After both environments are terminated, Empty and Delete S3 bucket prefixed with `elasticbeanstalk-us-east-1-...`
 
 ---
 
