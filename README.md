@@ -120,9 +120,15 @@ Let's get started with the demo.
 9. Click `Create Environment`.
 10. Wait for the environment to be create and then click on the application URL.
 
+> Note: If you need to make any changes to the code and create a zip on a Mac OS
+
+```bash
+cd /nodejs_admin
+zip ../nodejs_admin -r * .[^.]*
+```
+
 _EBS Admin 1_
 ![EBS_Admin1](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/6732crlvx8mlh13k5a31.png)
-
 
 _EBS Admin 2.1_
 ![EBS_Admin2.1](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/jsmjlbadqkl839fo8mrd.png)
@@ -175,6 +181,12 @@ _you might notice this error if you do not select the shared load balancer_
 9. Click `Create Environment`.
 10. Wait for the environment to be create and then click on the application URL.
 
+> Note: If you need to make any changes to the code and create a zip on a Mac OS
+
+```bash
+cd /nodejs_forum
+zip ../nodejs_forum -r * .[^.]*
+```
 
 _EBS Forum 4.3_
 ![EBS_Forum4.3](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/hcdqha83enxj22ty7ov1.png)
