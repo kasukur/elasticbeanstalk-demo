@@ -131,9 +131,11 @@ _EBS Admin 1_
 ![EBS_Admin1](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/6732crlvx8mlh13k5a31.png)
 
 _EBS Admin 2.1_
+
 ![EBS_Admin2.1](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/jsmjlbadqkl839fo8mrd.png)
 
 _EBS Admin 2.2_
+
 ![EBS_Admin2.2](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/l1lwmhzcfsv88utykmh4.png)
 
 _EBS Admin 3.1_
