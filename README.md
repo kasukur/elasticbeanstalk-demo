@@ -145,12 +145,14 @@ _EBS_Admin 3.2_
 ![EBS_Admin3.2](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/f0ogdh9zck0hzti8o61l.png)
 
 _EBS_Admin 3.3_
+
 ![EBS_Admin3.3](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/l0lrjkntsat52ccmo9kj.png)
 
 _EBS Admin 4.1_
 ![EBS_Admin4.1](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/tlspioc97hzlb5pgef75.png)
 
 _EBS Admin 4.2_
+
 ![EBS_Admin4.2](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ux9s752o75et8g7g3qu3.png)
 
 _you might notice this error if you do not select the shared load balancer_
@@ -191,6 +193,7 @@ zip ../nodejs_forum -r * .[^.]*
 ```
 
 _EBS Forum 4.3_
+
 ![EBS_Forum4.3](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/hcdqha83enxj22ty7ov1.png)
 
 ---
